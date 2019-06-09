@@ -5,10 +5,10 @@
 
 class Keyboard{
 public:
-    Keyboard() {}
-    ~Keyboard() {}
+    Keyboard();
+    ~Keyboard();
 
-
+    bool checkButtons();
 private:
     Timer mTimer;
 };

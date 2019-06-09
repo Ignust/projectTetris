@@ -7,11 +7,10 @@
 
 class Tetris{
 public:
-    Tetris() {}
-    ~Tetris() {}
+    Tetris();
+    ~Tetris();
 
-    void run() {}
-
+    void run();
 private:
     HmiFu mHmiFu;
     Manager mManager;

@@ -8,10 +8,10 @@
 
 class Manager{
 public:
-    Manager() {}
-    ~Manager() {}
+    Manager();
+    ~Manager();
 
-
+    bool checkUserAction();
 private:
     Engine mEngine;
     Field mField;
