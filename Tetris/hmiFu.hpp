@@ -3,9 +3,9 @@
 
 #include "hmi/config_hmi.hpp"
 
-#if define HMI_QtUi
+#if defined HMI_QtUi
   #include "hmi/hmi_QtUi.hpp"
-#elif define HMI_Win7
+#elif defined HMI_Win7
   #include "hmi/hmi_Win7.hpp"
 #else
   #include "hmi/hmi_Base.hpp"
@@ -18,9 +18,9 @@ public:
 
 
 private:
-#if define HMI_QtUi
+#if defined HMI_QtUi
     Hmi_QtUi mHmi;
-#elif define HMI_Win7
+#elif defined HMI_Win7
     Hmi_Win7 mHmi;
 #else
     Hmi_Base mHmi;

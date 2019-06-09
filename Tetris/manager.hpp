@@ -4,7 +4,7 @@
 #include "tetrisElements/Engine.hpp"
 #include "tetrisElements/Field.hpp"
 #include "tetrisElements/Keyboard.hpp"
-#include "tetrisElements/Object.hpp"
+#include "tetrisElements/IObject.hpp"
 
 class Manager{
 public:
@@ -16,8 +16,8 @@ private:
     Engine mEngine;
     Field mField;
     Keyboard mKeyboard;
-    Object mObjCurr;
-    Object mObjNext;
+    IObject *mObjCurr;
+    IObject *mObjNext;
 };
 
 #endif // MANAGER_HPP
