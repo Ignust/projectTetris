@@ -24,5 +24,5 @@ Manager::~Manager()
 bool Manager::checkUserAction()
 //-----------------------------------------------------------------------------
 {
-    mKeyboard.checkButtons;
+    return mKeyboard.checkButtons();
 }

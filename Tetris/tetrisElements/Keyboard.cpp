@@ -24,6 +24,6 @@ bool Keyboard::checkButtons()
 //-----------------------------------------------------------------------------
 {
     const int button = getchar();
-    printf("Button %d = %c was pressed", button, static_cast<char>(button));
-    return true;
+    printf("Button %d = %c was pressed\n", button, static_cast<char>(button));
+    return false;
 }
