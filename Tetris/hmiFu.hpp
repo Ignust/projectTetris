@@ -13,9 +13,12 @@
 
 class HmiFu{
 public:
-    HmiFu() {}
-    ~HmiFu() {}
+    HmiFu();
+    ~HmiFu();
 
+    void eventScoreWasChanged();
+    void eventNewObjWasChanged();
+    void eventFieldWasChanged();
 
 private:
 #if defined HMI_QtUi

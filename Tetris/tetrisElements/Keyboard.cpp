@@ -23,7 +23,8 @@ Keyboard::~Keyboard()
 bool Keyboard::checkButtons()
 //-----------------------------------------------------------------------------
 {
+    const int exitButton = 113; // q == 113
     const int button = getchar();
     printf("Button %d = %c was pressed\n", button, static_cast<char>(button));
-    return false;
+    return (button == exitButton);
 }
