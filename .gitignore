@@ -3,3 +3,5 @@
 *.includes
 *.creator
 *.config
+*.cxxflags
+*.cflags
