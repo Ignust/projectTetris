@@ -9,6 +9,7 @@ public:
     ~Keyboard();
 
     bool checkButtons();
+    void setKeypress();
 private:
     Timer mTimer;
 };

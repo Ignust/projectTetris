@@ -1,5 +1,7 @@
 #include "tetris.hpp"
 
+#include <iostream>
+
 //-----------------------------------------------------------------------------
 Tetris::Tetris()
     : mHmiFu()
@@ -22,7 +24,9 @@ void Tetris::run()
 {
     while(true) {
         if (mManager.checkUserAction()) {
+            std::cout << "mManager.checkUserAction" <<std::endl;
             break;
         }
+        std::cout << "whle:: -------" <<std::endl;
     }
 }

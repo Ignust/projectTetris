@@ -1,5 +1,10 @@
 #include "manager.hpp"
 
+#include<thread>
+#include<pthread.h>
+#include<iostream>
+
+using namespace std;
 
 //-----------------------------------------------------------------------------
 Manager::Manager()
