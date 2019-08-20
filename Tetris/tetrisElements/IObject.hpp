@@ -1,6 +1,6 @@
 #ifndef IOBJECT_HPP
 #define IOBJECT_HPP
-
+#include "stdint.h"
 
 class IObject
 {
@@ -14,6 +14,8 @@ public:
     virtual void goRight() = 0;
 
 private:
+    uint8_t Xpos;
+    uint8_t Ypos;
 
 };
 

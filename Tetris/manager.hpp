@@ -5,6 +5,8 @@
 #include "tetrisElements/Field.hpp"
 #include "tetrisElements/Keyboard.hpp"
 #include "tetrisElements/IObject.hpp"
+#include "stdint.h"
+
 
 class Manager{
 public:
@@ -12,6 +14,7 @@ public:
     ~Manager();
 
     bool checkUserAction();
+    void showField();
 private:
     Engine mEngine;
     Field mField;

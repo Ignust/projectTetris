@@ -1,6 +1,26 @@
 #include "tetris.hpp"
 
-int main() {
+#include <sys/ioctl.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+#define COLS 26
+#define ROWS 1
+
+int main(int ac, char *av[]) {
+    int cols = av[1] ? atoi(av[1]) : COLS,
+        rows = av[1] && av[2] ? atoi(av[2]) : ROWS;
+      if (cols < 0)
+        cols = COLS;
+      if (rows < 0)
+        rows = ROWS;
+
+      printf("\e[8;%d;%d;t", cols, rows);
+
     Tetris myApp;
     myApp.run();
     return 0;

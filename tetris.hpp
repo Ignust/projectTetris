@@ -4,6 +4,7 @@
 #include "Tetris/hmiFu.hpp"
 #include "Tetris/manager.hpp"
 #include "Tetris/manager_hmi_types.hpp"
+#include "stdint.h"
 
 class Tetris{
 public:

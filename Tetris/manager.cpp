@@ -31,3 +31,13 @@ bool Manager::checkUserAction()
 {
     return mKeyboard.checkButtons();
 }
+//-----------------------------------------------------------------------------
+void Manager::showField()
+//-----------------------------------------------------------------------------
+{
+    system("clear");
+    mField.showField();
+    this_thread::sleep_for(chrono::milliseconds(100));
+}
+
+

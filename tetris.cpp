@@ -23,10 +23,11 @@ void Tetris::run()
 //-----------------------------------------------------------------------------
 {
     while(true) {
-        if (mManager.checkUserAction()) {
+        mManager.showField();
+        /*if (mManager.checkUserAction()) {
             std::cout << "mManager.checkUserAction" <<std::endl;
             break;
-        }
-        std::cout << "whle:: -------" <<std::endl;
+        }~*/
+        //std::cout << "whle:: -------" <<std::endl;
     }
 }
